@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h3>ITMD 4/541 - Lab 3 Senthilvel Rajakarthihan</h3>
+        <h1>Tip Calculator</h1>
+        
+        <form id="tipForm">
+            <label for="billTotal">Bill Total ($):</label>
+            <input type="text" id="billTotal" placeholder="Enter total bill">
+            
+            <br>
+            <div id="errorMessage" class="error-message"></div>
+            <label for="tipSlider">Tip Percentage (%):</label>
+            <span id="tipPercentageDisplay">0</span>%
+            <input type="range" id="tipSlider" min="0" max="100" value="0">
+            
+            <br>
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="USD">USD - US Dollar</option>
+                <option value="INR">INR - Indian Rupee</option>
+                <option value="JPY">JPY - Japanese Yen</option>
+            </select>
+            <br>
+            
+
+            <label for="tipAmount">Tip Amount ($):</label>
+            <strong><input type="text" id="tipAmount" disabled style="font-weight: bold;"></strong><br>
+            
+            
+            
+            <label for="totalWithTip">Total Bill with Tip ($):</label>
+            <input type="text" id="totalWithTip" disabled style="font-weight: bold;">
+            
+            
+            
+        </form>
+        
+        
+    </div>
+    
+    <div class="currency-exchange">
+        <h3>Currency Conversion</h3>
+        <p>$ 1 USD = 84.07 INR</p>
+        <p>$ 1 USD = 149.34 Yen</p>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

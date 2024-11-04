@@ -1,0 +1,137 @@
+/* General body styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc; /* Light background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #4a5568; /* Darker text color */
+}
+
+/* Main container styling */
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    margin-right: 20px;
+}
+
+/* Currency exchange box styling */
+.currency-exchange {
+    background-color: #e6fffa; /* Soft teal background */
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 540px;
+    max-height: 160px;
+    display: inline-block;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+/* Heading styling */
+h1, h3 {
+    text-align: center;
+    color: #2d3748; /* Darker shade for headings */
+}
+
+h1 {
+    color: #2c7a7b; /* Teal for main heading */
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+    color: #2c7a7b; /* Teal for labels */
+}
+
+/* Standard input and dropdown styling */
+input[type="text"],
+input[type="range"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #ffffff; /* White background for inputs */
+}
+
+/* Disabled input styling */
+input[disabled] {
+    background-color: #edf2f7; /* Light gray background */
+    color: #a0aec0; /* Light gray text */
+    font-weight: bold;
+}
+
+/* Range input slider styling */
+input[type="range"] {
+    -webkit-appearance: none;
+    background: #b2f5ea; /* Light teal background */
+    border-radius: 5px;
+    height: 6px;
+    margin-bottom: 12px;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #2c7a7b; /* Teal for thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Error message styling */
+.error-message {
+    color: #e53e3e; /* Red for error messages */
+    margin: 10px 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Currency select styling */
+#currency {
+    margin-top: 12px;
+}
+
+#tipPercentageDisplay {
+    font-weight: bold;
+    color: #4a5568; /* Darker text for display */
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .container, .currency-exchange {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="text"],
+    select,
+    input[type="range"] {
+        font-size: 0.95rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
